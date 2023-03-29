@@ -5,7 +5,7 @@ domains:
 name: dana-auction
 region: lon
 static_sites:
-- environment_slug: html
+- environment_slug: php
   github:
     branch: main
     deploy_on_push: true
