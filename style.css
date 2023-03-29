@@ -54,7 +54,7 @@ a {
 }
 .intro__title-bottom {
     text-align: center;
-    margin: 0 60px 47px 43px;
+    margin: 0 60px 20px 43px;
     font-size: 99.6px;
     line-height: 90.84px;
     text-transform: uppercase;
@@ -343,11 +343,11 @@ footer {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
     .intro__title-bottom {
         font-size: 19.6px;
         line-height: 18.84px;
-        margin: 0 25px 15px 25px;
+        margin: 0 25px 10px 25px;
     }
     .main__title {
         font-size: 24.6px;
