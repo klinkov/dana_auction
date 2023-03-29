@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-      
+
 //     function handleFormSubmit(event) {
 //         event.preventDefault()
 //         serializeForm(applicantForm)
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //     function serializeForm(formNode) {
 //         return new FormData(formNode)
 //     }
-    
+
 //     async function sendData(data) {
 //         return await fetch('/api/apply/', {
 //           method: 'POST',
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //     async function handleFormSubmit(event) {
 //         event.preventDefault()
-      
+
 //         const data = serializeForm(event.target)
 //         const response = await sendData(data)
 //     }
@@ -72,7 +72,7 @@ function ensureVideoPlays() {
     const video = document.getElementById('videoPlayer');
 
     if(!video) return;
-    
+
     const promise = video.play();
     if(promise !== undefined){
         promise.then(() => {
