@@ -1,0 +1,16 @@
+domains:
+- domain: dana.auction
+  type: PRIMARY
+  zone: dana.auction
+name: dana-auction
+region: lon
+static_sites:
+- environment_slug: html
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: klinkov/dana_static_site
+  name: dana-static-site
+  routes:
+  - path: /
+  source_dir: /
