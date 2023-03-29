@@ -412,6 +412,7 @@ figure {
     max-height: 888px;
     max-width: 840px;
     margin: 0;
+    background-color: #000;
 }
 figure:before {
     content: "";
