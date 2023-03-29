@@ -1,4 +1,5 @@
 <?php
+require __DIR__ . '/vendor/autoload.php';
 
 $email = $_POST['email']; // Принимаем данные
 $email = htmlspecialchars($email); // Преобразуем все символы которые пользователь пытается добавить в форму
