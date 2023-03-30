@@ -43,7 +43,7 @@ $err = curl_error($curl);
 
 curl_close($curl);
 
-echo "entry.175484913=" + $email + "&entry.150908741=" + $_SERVER['SERVER_NAME'] + "&fbzx=4985693244102912634&partialResponse=%5Bnull%2Cnull%2C%224985693244102912634%22%5D";
+echo "entry.175484913=" + $email + "&entry.150908741=" . $_SERVER['SERVER_NAME'] . "&fbzx=4985693244102912634&partialResponse=%5Bnull%2Cnull%2C%224985693244102912634%22%5D";
 
 // if ($err) {
 //     header('Location: /index.html?sacerr' + err,true, 302);
