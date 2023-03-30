@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+	src: url(fonts/WorkSans-Regular.ttf);
+}
+
 body {
     margin: 0;
     font-size: 27.22px;
@@ -34,12 +41,6 @@ a {
 .flex-container-intro {
     display: flex;
 }
-/* .intro-preview {
-    width: 50%;
-    height: auto;
-    max-height: 888px;
-    max-width: 840px;
-} */
 .intro-block__text {
     width: 50%;
     height: auto;
@@ -58,7 +59,7 @@ a {
     font-size: 99.6px;
     line-height: 90.84px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
     max-width: 740px;
 }
@@ -80,8 +81,8 @@ main {
 }
 .main__title {
     font-size: 99.6px;
-    font-weight: 500;
-    line-height: 90.84px;
+    font-weight: 700;
+    line-height: 105.84px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -104,7 +105,7 @@ main {
     padding: 18px 18px 18px 21px;
     font-size: 57.6px;
     line-height: 52.53px;
-    font-weight: 500;
+    font-weight: 700;
     outline: none;
 }
 .mail-input::placeholder {
@@ -141,7 +142,7 @@ main {
 .invest-top__subtitle {
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 57.6px;
     line-height: 52.3px;
 }
@@ -180,7 +181,7 @@ footer {
 }
 .footer__title {
     color: #E75C2D;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 57.6px;
     line-height: 52.53px;
     text-align: center;
