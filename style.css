@@ -70,8 +70,8 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #000000;
-    color: #fff;
+    background-color: black;
+    color: white;
     padding: 178px 0 317px 0;
     position: relative;
 }
