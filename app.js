@@ -8,9 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 let videoSource = new Array();
-videoSource[2] = 'https://dana.auction/mov/AndriiPavlov_CDM_014.mp4';
-videoSource[1] = 'https://dana.auction/mov/AndriiPavlov_PS_040_1.mp4';
 videoSource[0] = 'https://dana.auction/mov/AndriiPavlov_S6_007.mp4';
+videoSource[1] = 'https://dana.auction/mov/AndriiPavlov_PS_040_1.mp4';
+videoSource[2] = 'https://dana.auction/mov/AndriiPavlov_CDM_014.mp4';
+
 let i = 0; // global
 const videoCount = videoSource.length;
 const element = document.getElementById("videoPlayer");
