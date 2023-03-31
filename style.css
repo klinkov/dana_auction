@@ -46,6 +46,7 @@ a {
 /* intro block ======== */
 .flex-container-intro {
     display: flex;
+    background-color: white;
 }
 
 .intro-block__text {
