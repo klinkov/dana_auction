@@ -139,6 +139,12 @@ main {
     background-position: center;
     min-height: 1005px;
 }
+.invest-img-mobile {
+    display: none;
+    width: 100%;
+    height: auto;
+
+}
 .invest-top__subtitle {
     text-align: center;
     text-transform: uppercase;
@@ -195,9 +201,11 @@ footer {
     position: absolute;
     bottom: 35px;
     left: 40px;
+    display: flex;
+}
+.footer-ico {
     width: 31px;
     height: 31px;
-    display: flex;
 }
 .footer-link:last-child {
     margin-left: 20px;
@@ -321,10 +329,6 @@ footer {
     .invest {
         min-height: auto;
     }
-    /* .invest-bottom,
-    .invest-top {
-        width: 100%;
-    } */
     .invest-top,
     .invest-bottom {
         min-height: 320px;
@@ -345,68 +349,130 @@ footer {
 }
 
 @media (max-width: 450px) {
+    .flex-container-intro {
+        flex-direction: column-reverse;
+    }
     .intro__title-bottom {
-        font-size: 19.6px;
-        line-height: 18.84px;
-        margin: 0 25px 10px 25px;
+        margin: 0 15px 20px 15px;
+    }
+    .intro-block__text {
+        width: 100%;
+        min-height: 350px;
+    }
+    .intro__title-bottom {
+        font-size: 44.2px;
+    }
+    .container {
+        max-width: 90%;
     }
     .main__title {
-        font-size: 24.6px;
-        line-height: 34.84px;
+        font-size: 34.5px;
+        line-height: 31.46px;
     }
     .main__subtitle {
-        font-size: 14.22px;
-        margin-top: 15px;
-        margin-bottom: 25px;
-        line-height: 29.02px;
+        font-size: 17.18px;
+        line-height: 18.93px;
+        margin-top: 45px;
+        margin-bottom: 175px;
     }
-    .mail-input, .mail-button {
-        font-size: 11.6px;
+    .main-btn-group {
+        flex-direction: column;
+    }
+    .mail-input {
+        font-size: 33.27px;
+        line-height: 30.34px;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+    }
+    .mail-button {
+        font-size: 33.54px;
+        line-height: 30.59px;
+    }
+    .mail-button {
+        padding: 9px 34px;
+    }
+    .main-bottom-img {
+        bottom: -25px;
     }
     .invest {
-        margin-bottom: 20px;
+        background-image: none;
     }
-    .invest-top__subtitle {
-        font-size: 20.6px;
-        line-height: 25.3px;
+    .invest-img-mobile {
+        display: block;
     }
     .invest-top,
     .invest-bottom {
-        min-height: 200px;
-        justify-content: center;
+        width: 100%;
+    }
+    .invest-top__subtitle {
+        max-width: 90%;
+    }
+    .invest-top__subtitle {
+        font-size: 34.5px;
+        line-height: 31.46px;
     }
     .invest-bottom__title {
-        margin: 10px 4% 10px 4%;
-        font-size: 13.22px;
-        max-width: 320px;
+        font-size: 17.18px;
+        line-height: 18.93px;
     }
-    .footer__title {
-        font-size: 14.6px;
-        line-height: 20.53px;
+    .invest-bottom__title {
+        text-align: center;
     }
-    .center--block, .center-center-block {
-        height: 200px;
+    .center--block {
+        display: none;
+    }
+    .center-center-block {
+        width: 100%;
+        background-color: #1B1B1B;
+    }
+    .center-block {
+        width: 60%;
+        background-color: #1B1B1B;
     }
     .center-block, .min-block {
-        height: 75px;
+        height: 200px;
     }
-    footer {
-        min-height: 340px;
+    .min-block {
+        width: 20%;
     }
-    .footer-info,
+    .footer__title {
+        font-size: 33.76px;
+        line-height: 30.79px;
+    }
     .footer-img {
-        bottom: 5%;
+        left: calc(50% - 56px);
+        bottom: 65px;
+    }
+    img.footer-ico {
+        width: 46px;
+        height: 46px;
     }
     .footer-info {
-        font-size: 6.6px;
+        font-size: 15.75px;
+        line-height: 14.36px;
+        color: #fff;
+        right: calc(50% - 85px);
     }
-    .footer-link:last-child {
-        margin-left: 5px;
+    .footer-ico {
+        width: 46px;
+        height: 46px;
+    }
+    #inst path {
+        fill: #fff;
+    }
+    #inst rect {
+        stroke: #fff;
+    }
+    #twit path {
+        fill: #fff;
+    }
+    #twit rect {
+        stroke: #fff;
     }
 }
 
 figure {
-    background: #999;
     width: 50%;
     overflow: hidden;
     line-height: 1;
@@ -421,8 +487,15 @@ figure:before {
     padding-top: 100%;
     float: left;
 }
+
 .intro-preview {
     max-width: 100%;
     height: auto;
     vertical-align: top;
+}
+
+@media (max-width: 450px) {
+    figure {
+        width: 100%;
+    }
 }

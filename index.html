@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
 
     <title>DANA Auction</title>
-  </head>
-  <body>
+</head>
+<body>
+    <svg style="display: none;">
+        <symbol viewBox="0 0 32 32" fill="none" id="inst">
+            <path d="M24.728 5.17456C24.3594 5.17456 23.9991 5.2938 23.6926 5.51721C23.3861 5.74061 23.1473 6.05814 23.0063 6.42963C22.8652 6.80113 22.8284 7.2099 22.9003 7.60425C22.9723 7.9986 23.1498 8.36082 23.4105 8.64509C23.6712 8.92936 24.0033 9.12291 24.3649 9.20127C24.7264 9.27963 25.1011 9.23927 25.4416 9.0853C25.7821 8.93133 26.0731 8.67067 26.2778 8.33628C26.4825 8.00189 26.5917 7.60879 26.5916 7.2067C26.5916 6.0844 25.7569 5.17456 24.728 5.17456Z" fill="black"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4385 7.54974C12.0342 7.54974 8.46338 11.445 8.46338 16.2493C8.46338 21.0537 12.0342 24.9471 16.4385 24.9471C20.8427 24.9471 24.4126 21.0537 24.4126 16.2493C24.4126 11.445 20.8427 7.54974 16.4385 7.54974ZM16.4707 21.8495C19.2849 21.8495 21.5663 19.3609 21.5663 16.291C21.5663 13.2211 19.2849 10.7324 16.4707 10.7324C13.6565 10.7324 11.3751 13.2211 11.3751 16.291C11.3751 19.3609 13.6565 21.8495 16.4707 21.8495Z" fill="black"/>
+            <rect x="2.44141" y="1.5" width="28.0588" height="28.0588" stroke="#1B1B1B" stroke-width="3"/>
+        </symbol>
+
+        <symbol viewBox="0 0 32 32" fill="none" id="twit">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9541 13.0423L15.9149 12.3947C15.797 10.7163 16.8312 9.18318 18.4676 8.58845C19.0698 8.37699 20.0909 8.35056 20.7585 8.53559C21.0204 8.61489 21.5178 8.87921 21.8713 9.1171L22.5127 9.55323L23.2196 9.32856C23.6124 9.20961 24.136 9.01137 24.3717 8.87921C24.5942 8.76026 24.7906 8.69418 24.7906 8.73383C24.7906 8.95851 24.3062 9.72505 23.9004 10.148C23.3506 10.7427 23.5076 10.7956 24.6204 10.3991C25.288 10.1744 25.3011 10.1744 25.1702 10.4255C25.0917 10.5577 24.6858 11.0202 24.2538 11.4431C23.5207 12.17 23.4815 12.2493 23.4815 12.8573C23.4815 13.7956 23.0364 15.7516 22.5913 16.8221C21.7665 18.831 19.9993 20.9059 18.232 21.95C15.7447 23.417 12.4327 23.7871 9.64428 22.928C8.71482 22.6373 7.11771 21.8972 7.11771 21.765C7.11771 21.7253 7.60208 21.6725 8.19117 21.6593C9.42173 21.6328 10.6523 21.2892 11.6996 20.6813L12.4065 20.2583L11.5948 19.9808C10.4428 19.5843 9.40864 18.6724 9.14682 17.8134C9.06827 17.5358 9.09445 17.5226 9.82755 17.5226L10.5868 17.5094L9.94537 17.2054C9.18609 16.8221 8.49227 16.1745 8.1519 15.5137C7.90317 15.038 7.58899 13.8353 7.68063 13.7428C7.70681 13.7031 7.98172 13.7824 8.2959 13.8881C9.19918 14.2185 9.317 14.1393 8.79336 13.5842C7.81154 12.5797 7.51044 11.0863 7.98172 9.67218L8.20427 9.0378L9.06827 9.89686C10.8356 11.6282 12.917 12.659 15.2996 12.963L15.9541 13.0423Z" fill="#1B1B1B"/>
+            <rect x="1.5" y="1.5" width="28.0588" height="28.0588" stroke="#1B1B1B" stroke-width="3"/>
+        </symbol>
+    </svg>
+
     <div id="popUp">
-      <span></span>
-      <p>Thanks for joining us</p>
+        <span></span>
+        <p>Thanks for joining us</p>
     </div>
 
     <section class="intro">
-      <div class="flex-container-intro">
+        <div class="flex-container-intro">
         <figure>
           <video
             playsinline
@@ -33,53 +43,34 @@
             id="videoPlayer"
           ></video>
         </figure>
-        <!-- <img src="img/intro-preview.jpg" alt="" class="intro-preview"> -->
-        <div class="intro-block__text">
-          <img src="img/svg/intro-logo.svg" alt="" class="inro-logo-img" />
-          <p class="intro__title-bottom">where art meets impact</p>
+            <!-- <img src="img/intro-preview.jpg" alt="" class="intro-preview"> -->
+            <div class="intro-block__text">
+                <img src="img/svg/intro-logo.svg" alt="" class="inro-logo-img">
+                <p class="intro__title-bottom">where art meets impact</p>
+            </div>
         </div>
-      </div>
     </section>
 
     <main>
-      <div class="container">
-        <h2 class="main__title">Welcome to Dana,<br />NFT CHARITY auction!</h2>
-        <p class="main__subtitle">
-          In a world full of ever-evolving bad and good, shape the world around
-          you. Ignite your passion for art. Use it as a force to make the world
-          a better place. Unlock a world of giving through artistic expression.
-        </p>
-        <form
-          class="main-btn-group"
-          action="/send.php"
-          method="post"
-          id="formMale"
-        >
-          <input
-            type="email"
-            name="mail"
-            class="mail-input"
-            placeholder="Enter your email"
-            required
-          />
-          <input type="submit" value="join" class="mail-button" />
-        </form>
-        <!-- Thanks for joining us -->
-      </div>
-      <img src="img/main.png" alt="" class="main-bottom-img" />
+        <div class="container">
+            <h2 class="main__title">Welcome to Dana,<br>NFT CHARITY auction!</h2>
+            <p class="main__subtitle">In a world full of ever-evolving bad and good, shape the world around you. Ignite your passion for art. Use it as a force to make the world a better place. Unlock a world of giving through artistic expression.</p>
+            <form class="main-btn-group" action="/send.php" method="post" id="formMale">
+                <input type="email" name="mail" class="mail-input" placeholder="Enter your email" required>
+                <input type="submit" value="join" class="mail-button">
+            </form>
+        </div>
+        <img src="img/main.png" alt="" class="main-bottom-img">
     </main>
 
     <section class="invest">
-      <div class="invest-top">
-        <p class="invest-top__subtitle-head invest-top__subtitle">
-          Invest in ART<br />and<br />Make a Difference
-        </p>
-        <p class="invest-top__subtitle-body invest-top__subtitle">
-          with Dana NFT Auction
-        </p>
-      </div>
+        <img src="img/invest-bg-mobile.jpg" class="invest-img-mobile">
+        <div class="invest-top">
+            <p class="invest-top__subtitle-head invest-top__subtitle">Invest in ART<br>and<br>Make a Difference</p>
+            <p class="invest-top__subtitle-body invest-top__subtitle">with Dana NFT Auction</p>
+        </div>
 
-      <div class="invest-bottom">
+        <div class="invest-bottom">
         <p class="invest-bottom__title">
           Ready to make an impact? Join the cathartic movement of Dana, where
           renown artists come together to create beautiful pieces for a cause.
@@ -90,39 +81,38 @@
           You'll be able to control its use toward tangible change. Even small
           acts of kindness have power enough to tackle global problems.
         </p>
-      </div>
+        </div>
     </section>
 
     <footer>
-      <div class="min-block"></div>
-      <div class="center-block"></div>
-      <div class="min-block"></div>
+        <div class="min-block"></div>
+        <div class="center-block"></div>
+        <div class="min-block"></div>
 
-      <div class="center--block"></div>
-      <div class="center-center-block">
-        <p class="footer__title">
-          Stand united through<br />creative expression,<br />join us for
-          making<br />the world<br />much better.
-        </p>
-      </div>
-      <div class="center--block"></div>
+        <div class="center--block"></div>
+        <div class="center-center-block"><p class="footer__title">Stand united through<br>creative expression,<br>join us for making<br>the world<br>much better.</p></div>
+        <div class="center--block"></div>
 
-      <div class="min-block">
-        <div class="footer-img">
-          <a href="https://www.instagram.com/dana.auction/" class="footer-link">
-            <img src="img/svg/inst.svg" alt="" class="footer-ico" />
-          </a>
-          <a href="https://twitter.com/dana_auction" class="footer-link">
-            <img src="img/svg/twit.svg" alt="" class="footer-ico" />
-          </a>
+        <div class="min-block">
+
+            <div class="footer-img">
+                <a href="https://www.instagram.com/dana.auction/" class="footer-link">
+                    <svg class="footer-ico">
+                        <use xlink:href="#inst"></use>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/dana_auction" class="footer-link">
+                    <svg class="footer-ico">
+                        <use xlink:href="#twit"></use>
+                    </svg>
+                </a>
+            </div>
+
         </div>
-      </div>
-      <div class="center-block"></div>
-      <div class="min-block">
-        <p class="footer-info">(C) 2023 Dana Auction</p>
-      </div>
+        <div class="center-block"></div>
+        <div class="min-block"><p class="footer-info">&copy; 2023 Dana Auction</p></div>
     </footer>
 
     <script src="app.js"></script>
-  </body>
+</body>
 </html>
