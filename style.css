@@ -50,12 +50,6 @@ a {
     display: flex;
     background-color: white;
 }
-.intro-preview {
-    width: 50%;
-    height: auto;
-    max-height: 888px;
-    max-width: 840px;
-}
 .intro-block__text {
     width: 50%;
     height: auto;
