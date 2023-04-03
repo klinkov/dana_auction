@@ -1,8 +1,8 @@
 @font-face {
-    font-family: 'Work Sans';
+	font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
-    src: url(fonts/WorkSans-Regular.ttf);
+	src: url(fonts/WorkSans-Regular.ttf);
 }
 
 body {
@@ -15,17 +15,13 @@ body {
 }
 
 p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+h1, h2, h3, h4, h5, h6,
 a {
     margin: 0;
 }
 
 #popUp {
+    position: relative;
     display: none;
     width: 100%;
     height: auto;
@@ -38,9 +34,15 @@ a {
     text-align: center;
     padding: 10px 0;
 }
-
 .block {
-    display: block !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+#popUp > span {
+    position: absolute;
+    right: 1%;
+    cursor: pointer;
 }
 
 /* intro block ======== */
@@ -48,7 +50,12 @@ a {
     display: flex;
     background-color: white;
 }
-
+.intro-preview {
+    width: 50%;
+    height: auto;
+    max-height: 888px;
+    max-width: 840px;
+}
 .intro-block__text {
     width: 50%;
     height: auto;
@@ -59,11 +66,9 @@ a {
     align-items: center;
     background-color: #fff;
 }
-
 .inro-logo-img {
     width: 100%;
 }
-
 .intro__title-bottom {
     text-align: center;
     margin: 0 60px 20px 43px;
@@ -86,12 +91,10 @@ main {
     padding: 178px 0 317px 0;
     position: relative;
 }
-
 .container {
     max-width: 75%;
     margin: 0 auto;
 }
-
 .main__title {
     font-size: 99.6px;
     font-weight: 700;
@@ -99,7 +102,6 @@ main {
     text-align: center;
     text-transform: uppercase;
 }
-
 .main__subtitle {
     font-size: 37.22px;
     font-weight: 400;
@@ -108,12 +110,14 @@ main {
     margin-top: 83px;
     margin-bottom: 117px;
 }
-
 .main-btn-group {
     display: flex;
     justify-content: center;
 }
-
+input {
+    border-radius: 0;
+    -webkit-appearance: none;
+}
 .mail-input {
     background-color: #1B1B1B;
     border: 1px solid #fff;
@@ -124,12 +128,10 @@ main {
     font-weight: 700;
     outline: none;
 }
-
 .mail-input::placeholder {
     color: #fff;
     text-transform: uppercase;
 }
-
 .mail-button {
     background-color: #E75C2D;
     border: 1px solid #fff;
@@ -141,7 +143,6 @@ main {
     padding: 18px 34px;
     cursor: pointer;
 }
-
 .main-bottom-img {
     position: absolute;
     bottom: 0;
@@ -158,14 +159,12 @@ main {
     background-position: center;
     min-height: 1005px;
 }
-
 .invest-img-mobile {
     display: none;
     width: 100%;
     height: auto;
 
 }
-
 .invest-top__subtitle {
     text-align: center;
     text-transform: uppercase;
@@ -173,7 +172,6 @@ main {
     font-size: 57.6px;
     line-height: 52.3px;
 }
-
 .invest-top {
     background-color: #fff;
     width: 50%;
@@ -183,7 +181,6 @@ main {
     justify-content: space-around;
     align-items: center;
 }
-
 .invest-bottom {
     background-color: #fff;
     width: 50%;
@@ -193,7 +190,6 @@ main {
     display: flex;
     align-items: center;
 }
-
 .invest-bottom__title {
     height: 100%;
     font-size: 27.22px;
@@ -209,7 +205,6 @@ footer {
     flex-wrap: wrap;
     position: relative;
 }
-
 .footer__title {
     color: #E75C2D;
     font-weight: 700;
@@ -218,28 +213,23 @@ footer {
     text-align: center;
     text-transform: uppercase;
 }
-
 .footer-link {
     text-decoration: none;
     display: block;
 }
-
 .footer-img {
     position: absolute;
     bottom: 35px;
     left: 40px;
     display: flex;
 }
-
 .footer-ico {
     width: 31px;
     height: 31px;
 }
-
 .footer-link:last-child {
     margin-left: 20px;
 }
-
 .footer-info {
     position: absolute;
     bottom: 35px;
@@ -259,7 +249,6 @@ footer {
     background-color: #fff;
     display: block;
 }
-
 .center-block {
     width: 50%;
     height: 222px;
@@ -271,7 +260,6 @@ footer {
     width: 25%;
     height: 444px;
 }
-
 .center-center-block {
     width: 50%;
     height: 444px;
@@ -287,37 +275,30 @@ footer {
         font-size: 45.6px;
         line-height: 50.84px;
     }
-
-    .main__title {
+    .main__title{
         font-size: 60.6px;
         line-height: 70.84px;
     }
-
     .main__subtitle {
         font-size: 25.22px;
     }
-
     .mail-input,
     .mail-button {
         font-size: 25.6px;
         line-height: 20.53px;
     }
-
     .invest-top__subtitle {
         font-size: 30.6px;
         line-height: 30.3px;
     }
-
     .invest-bottom__title {
         font-size: 20.22px;
         line-height: 22px;
     }
-
     .footer__title {
         font-size: 29.6px;
         line-height: 35.53px;
     }
-
     .footer-info {
         font-size: 13.6px;
     }
@@ -328,45 +309,36 @@ footer {
         font-size: 30.6px;
         line-height: 35.84px;
     }
-
     main {
         padding-top: 100px;
         padding-bottom: 175px;
     }
-
     .main__title {
         font-size: 35.6px;
         line-height: 40.84px;
     }
-
     .main__subtitle {
         font-size: 20.22px;
         margin-top: 35px;
         margin-bottom: 60px;
     }
-
     .invest-top {
         min-height: 350px;
     }
-
     .invest {
         min-height: 850px;
     }
-
     .invest-bottom__title {
         font-size: 17.22px;
         line-height: 19px;
     }
-
-    footer {
+    footer  {
         min-height: 600px;
     }
-
     .center-block,
     .min-block {
         height: 150px;
     }
-
     .center--block,
     .center-center-block {
         height: 350px;
@@ -377,26 +349,20 @@ footer {
     .invest {
         min-height: auto;
     }
-
     .invest-top,
     .invest-bottom {
         min-height: 320px;
     }
-
     .footer-info {
         font-size: 8.6px;
     }
-
     .footer-img {
         left: 1%;
     }
-
-    .mail-input,
-    .mail-button {
+    .mail-input, .mail-button {
         font-size: 14.6px;
         line-height: 0.0px;
     }
-
     .invest-bottom__title {
         margin: auto 4% auto 4%;
     }
@@ -406,16 +372,13 @@ footer {
     .flex-container-intro {
         flex-direction: column-reverse;
     }
-
     .intro__title-bottom {
         margin: 0 15px 20px 15px;
     }
-
     .intro-block__text {
         width: 100%;
         min-height: 350px;
     }
-
     .intro__title-bottom {
         font-size: 44.2px;
     }
@@ -423,23 +386,19 @@ footer {
     .container {
         max-width: 90%;
     }
-
     .main__title {
         font-size: 34.5px;
         line-height: 31.46px;
     }
-
     .main__subtitle {
         font-size: 17.18px;
         line-height: 18.93px;
         margin-top: 45px;
         margin-bottom: 175px;
     }
-
     .main-btn-group {
         flex-direction: column;
     }
-
     .mail-input {
         font-size: 33.27px;
         line-height: 30.34px;
@@ -447,113 +406,88 @@ footer {
         text-align: center;
         padding: 10px 5px 10px 5px;
     }
-
     .mail-button {
         font-size: 33.54px;
         line-height: 30.59px;
     }
-
     .mail-button {
         padding: 9px 34px;
     }
-
     .main-bottom-img {
         bottom: -25px;
     }
-
     .invest {
         background-image: none;
     }
-
     .invest-img-mobile {
         display: block;
     }
-
     .invest-top,
     .invest-bottom {
         width: 100%;
     }
-
     .invest-top__subtitle {
         max-width: 90%;
     }
-
     .invest-top__subtitle {
         font-size: 34.5px;
         line-height: 31.46px;
     }
-
     .invest-bottom__title {
         font-size: 17.18px;
         line-height: 18.93px;
     }
-
     .invest-bottom__title {
         text-align: center;
     }
-
     .center--block {
         display: none;
     }
-
     .center-center-block {
         width: 100%;
         background-color: #1B1B1B;
     }
-
     .center-block {
         width: 60%;
         background-color: #1B1B1B;
     }
-
-    .center-block,
-    .min-block {
+    .center-block, .min-block {
         height: 200px;
     }
-
     .min-block {
         width: 20%;
     }
-
     .footer__title {
         font-size: 33.76px;
         line-height: 30.79px;
     }
-
     .footer-img {
         left: calc(50% - 56px);
         bottom: 65px;
     }
-
     img.footer-ico {
         width: 46px;
         height: 46px;
     }
-
     .footer-info {
         font-size: 15.75px;
         line-height: 14.36px;
         color: #fff;
         right: calc(50% - 85px);
     }
-
     .footer-ico {
         width: 46px;
         height: 46px;
     }
-
     #inst path {
         fill: #fff;
     }
-
     #inst rect {
         stroke: #fff;
     }
-
     #twit path {
         fill: #fff;
     }
-
     #twit rect {
         stroke: #fff;
     }
