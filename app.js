@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     let popUp =  document.getElementById('popUp');
-    if(document.location.search == '?sacses'){
+    if(document.location.search == '?success'){
         popUp.classList.add('block');
     }
 });

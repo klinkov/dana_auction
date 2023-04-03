@@ -29,7 +29,7 @@ $err = curl_error($curl);
 curl_close($curl);
 
 if ($err) {
-  header('Location: /index.html?sacerr' . urlencode($err), true, 302);
+  header('Location: /index.html?error' . urlencode($err), true, 302);
 } else {
-  header('Location: /index.html?sacses', true, 302);
+  header('Location: /index.html?success', true, 302);
 }
