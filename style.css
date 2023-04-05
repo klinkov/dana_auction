@@ -1,5 +1,5 @@
 @font-face {
-	font-family: 'Work Sans';
+	font-family: 'Work Sans'; 
     font-style: normal;
     font-weight: 400;
 	src: url(fonts/WorkSans-Regular.ttf);
@@ -48,7 +48,12 @@ a {
 /* intro block ======== */
 .flex-container-intro {
     display: flex;
-    background-color: white;
+}
+.intro-preview {
+    width: 50%;
+    height: auto;
+    max-height: 888px;
+    max-width: 840px;
 }
 .intro-block__text {
     width: 50%;
@@ -58,7 +63,6 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
 }
 .inro-logo-img {
     width: 100%;
@@ -80,7 +84,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #000;
+    background-color: #1B1B1B;
     color: #fff;
     padding: 178px 0 317px 0;
     position: relative;
@@ -143,6 +147,9 @@ input {
     left: 0;
     width: 100%;
     max-height: 180px;
+}
+.mobile {
+    display: none;
 }
 
 /* invest block ======== */
@@ -376,7 +383,10 @@ footer {
     .intro__title-bottom {
         font-size: 44.2px;
     }
-
+    .intro-preview {
+        width: 100%;
+        transform: translateY(1px);
+    }
     .container {
         max-width: 90%;
     }
@@ -410,6 +420,12 @@ footer {
     .main-bottom-img {
         bottom: -25px;
     }
+    .desctop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
     .invest {
         background-image: none;
     }
@@ -419,6 +435,9 @@ footer {
     .invest-top,
     .invest-bottom {
         width: 100%;
+    }
+    .invest-top {
+        justify-content: center;
     }
     .invest-top__subtitle {
         max-width: 90%;
@@ -484,43 +503,5 @@ footer {
     }
     #twit rect {
         stroke: #fff;
-    }
-}
-
-figure {
-    width: 50%;
-    overflow: hidden;
-    line-height: 1;
-    max-height: 888px;
-    max-width: 840px;
-    margin: 0;
-    background-color: #000;
-}
-
-figure:before {
-    content: "";
-    display: block;
-    padding-top: 100%;
-    float: left;
-}
-
-.intro-preview {
-    max-width: 100%;
-    height: auto;
-    vertical-align: top;
-}
-
-section.intro {
-    background-color: #000;
-}
-
-@media (max-width: 450px) {
-    figure {
-        width: 100%;
-    }
-
-    .intro-preview {
-        width: 100%;
-        transform: translateY(1px);
     }
 }
