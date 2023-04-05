@@ -489,6 +489,7 @@ footer {
         line-height: 14.36px;
         color: #fff;
         right: calc(50% - 85px);
+        bottom: 10px;
     }
     .footer-ico {
         width: 46px;
