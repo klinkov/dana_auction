@@ -350,7 +350,9 @@ footer {
     .invest {
         min-height: auto;
     }
-    .invest-top,
+    .invest-top {
+        min-height: 220px;
+    }
     .invest-bottom {
         min-height: 320px;
     }
