@@ -1,5 +1,5 @@
 @font-face {
-	font-family: 'Work Sans'; 
+	font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
 	src: url(fonts/WorkSans-Regular.ttf);
@@ -48,12 +48,17 @@ a {
 /* intro block ======== */
 .flex-container-intro {
     display: flex;
+    flex-flow: wrap;
 }
 .intro-preview {
     width: 50%;
     height: auto;
     max-height: 888px;
     max-width: 840px;
+}
+.head-preview {
+    width: 100%;
+    height: auto;
 }
 .intro-block__text {
     width: 50%;
@@ -388,6 +393,7 @@ footer {
     .intro-preview {
         width: 100%;
         transform: translateY(1px);
+        display: none;
     }
     .container {
         max-width: 90%;
