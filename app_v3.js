@@ -27,3 +27,17 @@ document.getElementById('mainVideo').oncanplaythrough = function () {
     }, 500);
   }
 };
+
+document.getElementById('mainVideo').onended = function () {
+  function toggleControls() {
+    if (video.hasAttribute('controls')) {
+      video.removeAttribute('controls');
+    } else {
+      video.setAttribute('controls', 'controls');
+    }
+  }
+  var video = document.getElementById('mainVideo');
+  if (!video.hasAttribute('controls')) {
+    video.setAttribute('controls', 'controls');
+  }
+};

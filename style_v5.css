@@ -102,7 +102,7 @@ mainVideo {
     padding-top: 50px;
 }
 mainVideo > video {
-    width: 80vw;
+    width: 100vw;
     height: auto;
 }
 .container {
