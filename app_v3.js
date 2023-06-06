@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.getElementById('mainVideo').oncanplaythrough = function () {
   let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-  if (!isSafari) {
+//   if (!isSafari) {
     setTimeout(() => {
       document.addEventListener('click', () => {
         let video = document.getElementById('mainVideo');
@@ -25,19 +25,21 @@ document.getElementById('mainVideo').oncanplaythrough = function () {
         document.removeEventListener('click', null);
       });
     }, 500);
-  }
+//   }
 };
 
 document.getElementById('mainVideo').onended = function () {
-  function toggleControls() {
-    if (video.hasAttribute('controls')) {
-      video.removeAttribute('controls');
-    } else {
+//   if (!isSafari) {
+    function toggleControls() {
+      if (video.hasAttribute('controls')) {
+        video.removeAttribute('controls');
+      } else {
+        video.setAttribute('controls', 'controls');
+      }
+    }
+    var video = document.getElementById('mainVideo');
+    if (!video.hasAttribute('controls')) {
       video.setAttribute('controls', 'controls');
     }
-  }
-  var video = document.getElementById('mainVideo');
-  if (!video.hasAttribute('controls')) {
-    video.setAttribute('controls', 'controls');
-  }
+//   }
 };
