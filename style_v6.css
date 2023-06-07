@@ -105,7 +105,7 @@ mainVideo > video {
     width: 100vw;
     height: auto;
 }
-mainVideo > div.playBtn {
+mainVideo div.playBtn {
     width: 100vw;
     height: auto;
     display: none;
@@ -114,7 +114,7 @@ mainVideo > div.playBtn {
     background-color: #000;
     position: absolute;
 }
-mainVideo > div.playBtn img {
+mainVideo div.playBtn img {
     width: 50%;
     height: auto;
 }
