@@ -105,6 +105,15 @@ mainVideo > video {
     width: 100vw;
     height: auto;
 }
+mainVideo > div.playBtn {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    background-color: #000;
+    position: absolute;
+}
 .container {
     max-width: 75%;
     margin: 0 auto;

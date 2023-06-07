@@ -13,33 +13,31 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(hiddenPopUp, 3000);
 });
 
-document.getElementById('mainVideo').oncanplaythrough = function () {
-  let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+// Fix video issue
+let video = document.getElementById('mainVideo');
+const isVideoPlay = () => (video.currentTime > 0 && !video.paused && video.readyState > 2);
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-//   if (!isSafari) {
+
+document.getElementById('mainVideo').oncanplaythrough = function () {
+  console.log(!isSafari, !isVideoPlay(), !isSafari || !isVideoPlay());
+  if (!isSafari && !isVideoPlay()) {
+
+    document.querySelector('mainVideo > div.playBtn').style.display = 'flex';
+
     setTimeout(() => {
       document.addEventListener('click', () => {
-        let video = document.getElementById('mainVideo');
-        if (!(video.currentTime > 0 && !video.paused && video.readyState > 2))
+        document.querySelector('mainVideo > div.playBtn').style.display = 'none';
+        if (!isVideoPlay())
           document.getElementById('mainVideo').play();
         document.removeEventListener('click', null);
       });
-    }, 500);
-//   }
+    }, 1000);
+  }
 };
 
 document.getElementById('mainVideo').onended = function () {
-//   if (!isSafari) {
-    function toggleControls() {
-      if (video.hasAttribute('controls')) {
-        video.removeAttribute('controls');
-      } else {
-        video.setAttribute('controls', 'controls');
-      }
-    }
-    var video = document.getElementById('mainVideo');
-    if (!video.hasAttribute('controls')) {
-      video.setAttribute('controls', 'controls');
-    }
-//   }
+  if (!video.hasAttribute('controls')) {
+    video.setAttribute('controls', 'controls');
+  }
 };
