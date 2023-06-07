@@ -106,8 +106,8 @@ mainVideo > video {
     height: auto;
 }
 mainVideo > div.playBtn {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: auto;
     display: none;
     justify-content: center;
     align-content: center;

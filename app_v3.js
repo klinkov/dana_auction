@@ -14,21 +14,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Fix video issue
-let video = document.getElementById('mainVideo');
+const video = document.getElementById('mainVideo');
+const playBtn = document.querySelector('mainVideo > div.playBtn');
 const isVideoPlay = () => (video.currentTime > 0 && !video.paused && video.readyState > 2);
 const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 document.getElementById('mainVideo').oncanplaythrough = function () {
   if (!isVideoPlay()) {
 
-    document.querySelector('mainVideo > div.playBtn').style.display = 'flex';
+    playBtn.style.display = 'flex';
 
     setTimeout(() => {
-      document.addEventListener('click', () => {
-        document.querySelector('mainVideo > div.playBtn').style.display = 'none';
+      playBtn.addEventListener('click', () => {
+        playBtn.style.display = 'none';
         if (!isVideoPlay())
           document.getElementById('mainVideo').play();
-        document.removeEventListener('click', null);
+        playBtn.removeEventListener('click', null);
       });
     }, 1000);
   }
