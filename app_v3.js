@@ -18,10 +18,8 @@ let video = document.getElementById('mainVideo');
 const isVideoPlay = () => (video.currentTime > 0 && !video.paused && video.readyState > 2);
 const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-
 document.getElementById('mainVideo').oncanplaythrough = function () {
-  console.log(!isSafari, !isVideoPlay(), !isSafari || !isVideoPlay());
-  if (!isSafari && !isVideoPlay()) {
+  if (!isVideoPlay()) {
 
     document.querySelector('mainVideo > div.playBtn').style.display = 'flex';
 
