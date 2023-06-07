@@ -21,9 +21,7 @@ const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 document.getElementById('mainVideo').oncanplaythrough = function () {
   if (!isVideoPlay()) {
-
     playBtn.style.display = 'flex';
-
     setTimeout(() => {
       playBtn.addEventListener('click', () => {
         playBtn.style.display = 'none';
@@ -34,6 +32,10 @@ document.getElementById('mainVideo').oncanplaythrough = function () {
     }, 1000);
   }
 };
+
+video.addEventListener("playing", (event) => {
+  playBtn.style.display = 'none';
+});
 
 document.getElementById('mainVideo').onended = function () {
   if (!video.hasAttribute('controls')) {
